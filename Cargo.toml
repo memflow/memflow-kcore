@@ -1,0 +1,23 @@
+[package]
+name = "memflow-kcore"
+version = "0.1.0"
+authors = ["Aurimas Blažulionis <0x60@pm.me>"]
+edition = "2018"
+description = "coredump (/proc/kcore focused) connector for memflow physical memory introspection framework"
+homepage = "https://memflow.github.io/"
+repository = "https://github.com/memflow/memflow-kcore.git"
+documentation = "https://docs.rs/memflow-kcore"
+keywords = [ "memflow", "introspection", "memory", "linux" ]
+categories = [ "api-bindings", "memory-management", "os" ]
+readme = "README.md"
+license = "MIT"
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[dependencies]
+memflow = { git = "https://github.com/memflow/memflow.git", branch = "next" }
+goblin = "0.3"
+
+[features]
+inventory = ['memflow/inventory']
