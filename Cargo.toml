@@ -20,4 +20,7 @@ memflow = { git = "https://github.com/memflow/memflow.git", branch = "next" }
 goblin = "0.3"
 
 [features]
-inventory = ['memflow/inventory']
+inventory = ['memflow/plugins']
+
+[profile.release]
+lto = true
