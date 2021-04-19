@@ -1,5 +1,5 @@
 use goblin::Object;
-use memflow::connector::fileio::FileIoMemory;
+use memflow::connector::fileio::{CloneFile, FileIoMemory};
 use memflow::error::*;
 use memflow::mem::MemoryMap;
 use memflow::plugins::Args;
@@ -8,7 +8,7 @@ use std::fs::File;
 use std::io::Read;
 
 #[cfg_attr(feature = "plugins", memflow::derive::connector(name = "kcore"))]
-pub fn create_connector(args: &Args) -> Result<FileIoMemory<File>> {
+pub fn create_connector(args: &Args) -> Result<FileIoMemory<CloneFile>> {
     let mut mem = File::open(
         args.get("c")
             .or_else(|| args.get("core"))
@@ -39,7 +39,7 @@ pub fn create_connector(args: &Args) -> Result<FileIoMemory<File>> {
             map.push_remap(b, s, r);
         }
 
-        FileIoMemory::try_with_reader(mem, map)
+        FileIoMemory::try_with_reader(mem.into(), map)
     } else {
         Err(Error(ErrorOrigin::Connector, ErrorKind::InvalidExeFile))
     }
