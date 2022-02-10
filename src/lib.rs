@@ -1,18 +1,17 @@
 use goblin::Object;
+use memflow::cglue;
 use memflow::connector::fileio::{CloneFile, FileIoMemory};
-use memflow::error::*;
 use memflow::mem::MemoryMap;
-use memflow::plugins::Args;
-use memflow::types::{size, Address};
+use memflow::prelude::v1::*;
 use std::fs::File;
 use std::io::Read;
 
 #[cfg_attr(feature = "plugins", memflow::derive::connector(name = "kcore"))]
-pub fn create_connector(args: &Args) -> Result<FileIoMemory<CloneFile>> {
+pub fn create_connector(args: &ConnectorArgs) -> Result<FileIoMemory<CloneFile>> {
     let mut mem = File::open(
-        args.get("c")
-            .or_else(|| args.get("core"))
-            .or_else(|| args.get_default())
+        args.target
+            .as_ref()
+            .map(|v| v.as_ref())
             .unwrap_or("/proc/kcore"),
     )
     .map_err(|_| Error(ErrorOrigin::Connector, ErrorKind::UnableToReadFile))?;
@@ -31,7 +30,7 @@ pub fn create_connector(args: &Args) -> Result<FileIoMemory<CloneFile>> {
             .map(|h| {
                 (
                     Address::from(h.p_paddr),
-                    h.p_filesz as usize,
+                    h.p_filesz as umem,
                     Address::from(h.p_offset),
                 )
             })

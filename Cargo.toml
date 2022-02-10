@@ -18,7 +18,6 @@ crate-type = ["lib", "cdylib"]
 [dependencies]
 memflow = { git = "https://github.com/memflow/memflow.git", branch = "next" }
 goblin = "0.3"
-cglue = "0.1"
 
 [features]
 plugins = ['memflow/plugins']
