@@ -16,7 +16,7 @@ license = "MIT"
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-memflow = { git = "https://github.com/memflow/memflow.git", branch = "next" }
+memflow = "0.2.0-beta"
 goblin = "0.3"
 
 [features]

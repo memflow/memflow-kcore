@@ -104,8 +104,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "cglue"
-version = "0.2.5"
-source = "git+https://github.com/h33p/cglue?branch=main#672473978984d7afb67121ac54e6550f31905bb8"
+version = "0.2.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0053debe9e4299e2547e6576374ed0b0136494f16b450c8ec411d0b46e2dc9e6"
 dependencies = [
  "abi_stable",
  "cglue-macro",
@@ -115,8 +116,9 @@ dependencies = [
 
 [[package]]
 name = "cglue-gen"
-version = "0.2.2"
-source = "git+https://github.com/h33p/cglue?branch=main#672473978984d7afb67121ac54e6550f31905bb8"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8693afab1b06d4722b35d51bc4c4ea7a41887e3f95ad4a67b73bb82cf7efe7c1"
 dependencies = [
  "itertools",
  "lazy_static",
@@ -129,7 +131,8 @@ dependencies = [
 [[package]]
 name = "cglue-macro"
 version = "0.2.1"
-source = "git+https://github.com/h33p/cglue?branch=main#672473978984d7afb67121ac54e6550f31905bb8"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5a29a3b995b31756072458741810fd9ffe73b0a5fafa6ad08324b463c44ef528"
 dependencies = [
  "cglue-gen",
  "proc-macro2",
@@ -386,8 +389,9 @@ dependencies = [
 
 [[package]]
 name = "memflow"
-version = "0.1.5"
-source = "git+https://github.com/memflow/memflow.git?branch=next#5b55e0a8fb3b9f607c6290d5436e285fd187ef7d"
+version = "0.2.0-beta1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4bd4a071d4376feb60428ba6e19f43174e992a32bf4056a8e1ac56347096696"
 dependencies = [
  "abi_stable",
  "bitflags",
@@ -416,8 +420,9 @@ dependencies = [
 
 [[package]]
 name = "memflow-derive"
-version = "0.1.5"
-source = "git+https://github.com/memflow/memflow.git?branch=next#5b55e0a8fb3b9f607c6290d5436e285fd187ef7d"
+version = "0.2.0-beta1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b162b846355c1067a2f83fb37e193a441d05d6528e02d9bab658becbb78851fb"
 dependencies = [
  "darling",
  "proc-macro-crate",
