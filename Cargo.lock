@@ -104,9 +104,9 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "cglue"
-version = "0.2.7"
+version = "0.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0053debe9e4299e2547e6576374ed0b0136494f16b450c8ec411d0b46e2dc9e6"
+checksum = "15d7ac3d7a04e9aa5fdcd74126bed0217e3b9064dc55883fc1af63caffe07267"
 dependencies = [
  "abi_stable",
  "cglue-macro",
@@ -116,9 +116,9 @@ dependencies = [
 
 [[package]]
 name = "cglue-gen"
-version = "0.2.3"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8693afab1b06d4722b35d51bc4c4ea7a41887e3f95ad4a67b73bb82cf7efe7c1"
+checksum = "6d45b1d0735cf0c3f21ea1ecc666f7d2add6b89e462bee7b8401cf0823eddc64"
 dependencies = [
  "itertools",
  "lazy_static",
@@ -130,9 +130,9 @@ dependencies = [
 
 [[package]]
 name = "cglue-macro"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5a29a3b995b31756072458741810fd9ffe73b0a5fafa6ad08324b463c44ef528"
+checksum = "8285aff09f786d2f084779793728e050af8c446c32f240778d01f7e095c91614"
 dependencies = [
  "cglue-gen",
  "proc-macro2",
@@ -310,9 +310,9 @@ dependencies = [
 
 [[package]]
 name = "hashbrown"
-version = "0.11.2"
+version = "0.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ab5ef0d4909ef3724cc8cce6ccc8572c5c817592e9285f5464f8e86f8bd3726e"
+checksum = "8c21d40587b92fa6a6c6e3c1bdbf87d75511db5672f9c93175574b3a00df1758"
 dependencies = [
  "ahash",
 ]
@@ -355,9 +355,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.117"
+version = "0.2.119"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e74d72e0f9b65b5b4ca49a346af3976df0f9c61d550727f349ecd559f251a26c"
+checksum = "1bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4"
 
 [[package]]
 name = "libloading"
@@ -389,9 +389,9 @@ dependencies = [
 
 [[package]]
 name = "memflow"
-version = "0.2.0-beta1"
+version = "0.2.0-beta2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b4bd4a071d4376feb60428ba6e19f43174e992a32bf4056a8e1ac56347096696"
+checksum = "78c85d31f7cf1b56d9f0dd64bf18129aff3c46e5e25ca3195b4671e7016d7160"
 dependencies = [
  "abi_stable",
  "bitflags",
@@ -420,9 +420,9 @@ dependencies = [
 
 [[package]]
 name = "memflow-derive"
-version = "0.2.0-beta1"
+version = "0.2.0-beta2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b162b846355c1067a2f83fb37e193a441d05d6528e02d9bab658becbb78851fb"
+checksum = "89cf600cdea1effe5c4542d3d75620714e40fa08a331a2d2f33bb2fc9cac5053"
 dependencies = [
  "darling",
  "proc-macro-crate",
@@ -517,9 +517,9 @@ checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
 
 [[package]]
 name = "proc-macro-crate"
-version = "1.1.0"
+version = "1.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ebace6889caf889b4d3f76becee12e90353f2b8c7d875534a71e5742f8f6f83"
+checksum = "9dada8c9981fcf32929c3c0f0cd796a9284aca335565227ed88c83babb1d43dc"
 dependencies = [
  "thiserror",
  "toml",
@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "rangemap"
-version = "0.1.14"
+version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3929836cb64d09ee7deee59635c3d9bffbc1c0373e247efff6272abd62a11baa"
+checksum = "4556ba17699ec8276a2e73e22c5b846666e06fe9db1228a9d4377e67b5d35fcb"
 
 [[package]]
 name = "redox_syscall"
@@ -670,9 +670,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.78"
+version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d23c1ba4cf0efd44be32017709280b32d1cea5c3f1275c3b6d9e8bc54f758085"
+checksum = "8e8d9fa5c3b304765ce1fd9c4c8a3de2c8db365a5b91be52f186efc675681d95"
 dependencies = [
  "itoa",
  "ryu",
