@@ -1,6 +1,6 @@
 [package]
 name = "memflow-kcore"
-version = "0.1.0"
+version = "0.2.0-beta1"
 authors = ["Aurimas Blažulionis <0x60@pm.me>"]
 edition = "2018"
 description = "coredump (/proc/kcore focused) connector for memflow physical memory introspection framework"
