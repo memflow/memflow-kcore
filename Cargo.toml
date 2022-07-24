@@ -16,7 +16,7 @@ license = "MIT"
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-memflow = "0.2.0-beta"
+memflow = "^0.2.0-beta7"
 goblin = "0.3"
 
 [features]

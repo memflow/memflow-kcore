@@ -1,12 +1,11 @@
 use goblin::Object;
-use memflow::cglue;
 use memflow::connector::fileio::{CloneFile, FileIoMemory};
 use memflow::mem::MemoryMap;
 use memflow::prelude::v1::*;
 use std::fs::File;
 use std::io::Read;
 
-#[cfg_attr(feature = "plugins", memflow::derive::connector(name = "kcore"))]
+#[cfg_attr(feature = "plugins", connector(name = "kcore"))]
 pub fn create_connector(args: &ConnectorArgs) -> Result<FileIoMemory<CloneFile>> {
     let mut mem = File::open(
         args.target
