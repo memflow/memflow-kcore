@@ -440,7 +440,7 @@ dependencies = [
 
 [[package]]
 name = "memflow-kcore"
-version = "0.2.0-beta5"
+version = "0.2.0-beta7"
 dependencies = [
  "goblin 0.3.4",
  "memflow",
