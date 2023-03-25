@@ -37,7 +37,7 @@ pub fn create_connector(args: &ConnectorArgs) -> Result<FileIoMemory<CloneFile>>
             map.push_remap(b, s, r);
         }
 
-        FileIoMemory::try_with_reader(mem.into(), map)
+        FileIoMemory::with_mem_map(mem.into(), map)
     } else {
         Err(Error(ErrorOrigin::Connector, ErrorKind::InvalidExeFile))
     }
