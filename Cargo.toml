@@ -1,6 +1,6 @@
 [package]
 name = "memflow-kcore"
-version = "0.2.0-beta10"
+version = "0.2.0-beta11"
 authors = ["Aurimas Blažulionis <0x60@pm.me>"]
 edition = "2018"
 description = "coredump (/proc/kcore focused) connector for memflow physical memory introspection framework"
@@ -16,8 +16,8 @@ license = "MIT"
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-memflow = "=0.2.0-beta10"
-goblin = "^0.6"
+memflow = "=0.2.0-beta11"
+goblin = "0.7"
 
 [features]
 plugins = ['memflow/plugins']
