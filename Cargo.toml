@@ -20,7 +20,8 @@ memflow = "0.2"
 goblin = "0.7"
 
 [features]
-plugins = ['memflow/plugins']
+default = ["plugins"]
+plugins = ["memflow/plugins"]
 
 [profile.release]
 lto = true
